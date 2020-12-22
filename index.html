@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h2 >Log in </h2>
+        <p>Glad to see you back  : )</p>
+
+        <form action="post">
+
+            <label for="email">E mail: </label>
+            <div class="emailfield">
+                <input name="email" class="" onblur="emailblurred();" id="email" placeholder="your@mail.com" type="email">
+                <span id="e_correct_icon" class="icon_correct" style="background: url(assets/SVG/correct.svg); visibility: hidden"> </span>
+                <span id="e_wrong_icon" class="icon_wrong" style="background: url(assets/SVG/wrong.svg); visibility: hidden"> </span>
+
+            </div>
+            <label for="pwd">Password</label>
+            <div class="passwordfield">
+                <input name="password" onblur="pwdblurred()" class="" placeholder="At Least 8 Characters" id="pwd" value="" type="password">
+                <span id="p_correct_icon" class="icon_correct" style="background: url(assets/SVG/correct.svg); visibility: hidden"> </span>
+                <span id="p_wrong_icon" class="icon_wrong" style="background: url(assets/SVG/wrong.svg); visibility: hidden"> </span>
+
+            </div>
+            <button class="main_button" type="submit">Log in</button>
+        </form>
+        <a class="fp" href="#">Forgot Password?</a>
+        <span class="or"> -    OR    - </span>
+        <a href="#"><button class="secondary_button"> Create A New Account </button></a>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
